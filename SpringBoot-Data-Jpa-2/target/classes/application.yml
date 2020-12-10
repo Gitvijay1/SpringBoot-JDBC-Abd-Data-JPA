@@ -1,0 +1,20 @@
+#database key
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe 
+    username: system
+    password: batch4pm
+#Hibernate spesific properties
+  jpa:
+    properties:
+       dailect: org.hibernate.dialectOracle9Dialect
+       hibernate:
+         format_sql: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update 
+       
+    
+      
+  
